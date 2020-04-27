@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p>Apakah Anda Puas dengan Gaji yang diberikan Darma Henwa Saat ini?</p>
+        <div class="button">
+            <button id="puas" onclick="puas()">Puas</button>
+            <button id="button" onmouseover="myFunction()">Tidak Puas</button>
+        </div>
+
+    </div>
+    <script>
+        const btn = document.getElementById('button');
+
+        function myFunction() {
+            btn.style.position = 'absolute';
+            btn.style.top = (Math.random() * 100) + '%',
+                btn.style.left = (Math.random() * 100) + '%'
+        }
+
+        function puas() {
+            alert("Terima Kasih Atas Kepedulian anda untuk tidak menuntut Gaji lebih ")
+        }
+    </script>
+</body>
+
+</html>
